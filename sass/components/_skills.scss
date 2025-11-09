@@ -11,4 +11,37 @@
     font-weight: 600;
     color: #777;
   }
+
+  &__video {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  &__video-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  &__video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; // 16:9 ratio
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
 }
