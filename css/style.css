@@ -703,36 +703,45 @@ textarea {
     opacity: 0;
     top: 27px; } }
 
-/* ==== Full-Width Video Section ==== */
-.skills__video-full {
-  width: 100%;
-  background: #f8f9fa; /* light gray backdrop for separation */
+/* ==== Full-width video section ==== */
+.video-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: #f9f9f9;
+  padding: 6rem 0;
   text-align: center;
-  padding: 6rem 1rem;
-  margin-top: 4rem;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.05);
 }
 
-.skills__video-title {
-  font-size: 2.4rem;
+.video-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-title {
+  font-size: 2.5rem;
+  color: #0062b9;
   font-weight: 700;
-  color: #0062b9; /* brand blue */
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-.skills__video-wrapper {
+.video-wrapper {
   position: relative;
-  width: 90%;
-  max-width: 1200px; /* much wider */
-  margin: 0 auto;
+  width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.skills__video-wrapper iframe {
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
