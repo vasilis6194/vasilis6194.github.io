@@ -703,45 +703,28 @@ textarea {
     opacity: 0;
     top: 27px; } }
 
-/* ==== Full-width video section ==== */
-.video-section {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  background: #f9f9f9;
-  padding: 6rem 0;
+.skills__video {
+  margin-top: 3rem;
   text-align: center;
-  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.05);
 }
 
-.video-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.video-title {
-  font-size: 2.5rem;
-  color: #0062b9;
+.skills__video-title {
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
-.video-wrapper {
+.skills__video-wrapper {
   position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.video-wrapper iframe {
+.skills__video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
