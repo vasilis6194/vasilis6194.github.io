@@ -719,7 +719,7 @@ textarea {
 .skills__video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 480px; /* wider display */
+  max-width: 640px; /* wider display */
   margin: 0 auto;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
